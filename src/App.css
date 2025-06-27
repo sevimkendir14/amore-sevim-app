@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
+@import url(https://db.onlinewebfonts.com/c/19013ee6ef5a088817dc2ab6cbac1184?family=Ambit+Light);
+@import url(https://db.onlinewebfonts.com/c/2e034dac5823d334bc846538d54d8a03?family=Ambit-Regular);
+@import url(https://db.onlinewebfonts.com/c/939fd43c4802e33fe3e2d5328d0750c8?family=Ambit+Bold);
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F7E7EF;
+  font-family: 'Ambit', sans-serif;
+  color: #18181C;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: #412A78;
+  padding: 8px 15px 8px 15px;
+  margin: 21px auto;
+  width: fit-content;
+  border-radius: 40px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  gap: 32px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border: 1px;
+
+}
+
+.navbar a {
+  text-decoration: none;
   color: white;
+  margin-left: 20px;
+  font-weight: 500;
+  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.orta {
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.orta h1 {
+  font-size: 56px;
+  font-weight: 300;
+  font-family: 'Ambit Light';
+  vertical-align: text-bottom;
+}
+
+.orta h2 {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-family: 'Ambit Bold';
+  vertical-align: text-top;
+}
+
+.button {
+  background-color: #DD88CF;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.button.secondary {
+  background-color: #E64997;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.store-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  color: black;
+  
+}
+.apple-box {
+  background-color: #18181C;
+  color: white;
+  padding: 20px 24px 20px 24px;
+  border-radius: 16px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 13px;
+  margin: 15px;
+  
+}
+
+.phone-preview {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.phone-preview img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.right-side-avatars {
+  position: relative;
+  top: 60px;
+  right: 40px;
+  width: 100px;
+}
+
+.right-side-avatars img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.tagline-box {
+  background-color: #DD88CF;
+  color: white;
+  padding: 20px 24px 20px 24px;
+  border-radius: 16px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 15px;
+  rotate: -6.64deg;
+}
+
+.tagline-box.right {
+  background-color: #E64997;
+  rotate: 6.38deg;
+
+}
+
+@media (max-width: 768px) {
+  .orta h1 {
+    font-size: 56px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .orta h2 {
+    font-size: 56px;
+  }
+
+  .store-buttons {
+    flex-direction: column;
+  }
+
+  .right-side-avatars {
+    position: static;
+    margin: 20px auto;
   }
 }
